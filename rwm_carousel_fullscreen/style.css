@@ -1,11 +1,8 @@
 .bannerContainer {
     position:relative;     
-}
-.carousel {
-    position:absolute;
     height:100%;
-    top:0;    
 }
+
 .navbar {
     position:absolute;
     top:30px;
@@ -13,9 +10,12 @@
     background:#fff;
     width:100%;
     background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0;
 }
 
 .carousel-caption {
+    position: inherit;
+    margin-top:100px;
     top: 100px;
     bottom: auto;
 }
@@ -47,5 +47,19 @@ h1, h2, h3, p{
 }
 
 .carousel-background{
-    height:100%;
+    height:100%; 
+    width: 100%;
+      
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel .about-img{
+    background: url("/img/bg_01.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
