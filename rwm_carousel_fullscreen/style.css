@@ -4,20 +4,34 @@
 }
 
 .navbar {
-    position:absolute;
-    top:30px;
+    position:fixed;
+    top:5px;
     z-index:10;
     background:#fff;
+    border: 0;
     width:100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.46);
     border-radius: 0;
 }
 
 .carousel-caption {
     position: inherit;
     margin-top:100px;
-    top: 100px;
-    bottom: auto;
+    top: 900px;
+    height:100%;
+    color: #000;
+    text-shadow: 0 0px 0px;
+}
+
+.carousel-inner{
+  height:100%;
+}
+
+.item{
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .portrait{
@@ -29,7 +43,7 @@
 }
 
 .panel{
-    background-color: rgba(0, 0, 0, 0.46);
+    background-color: rgba(255, 255, 255, 0.46);
     border: 0;
 }
 
@@ -42,20 +56,38 @@
     margin-top: 30px;
 }
 
-h1, h2, h3, p{
+.bottom-spacer{
+  margin-bottom: 120px;
+}
+
+h1, h2, h3{
     font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .carousel {
     height:100%;
 }
 
+/***************** FOOTER *****************/
 #footer{
-    position:relative;
-    bottom:0;
+    position:fixed;
+    bottom:-100px;
     width:100%;
     padding:20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.46);
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+#footer:hover{
+  bottom:0px;
+  background-color: rgba(0, 0, 0, 0.80);
 }
 
 #footer a:hover {
@@ -79,7 +111,7 @@ h1, h2, h3, p{
   -moz-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  background: #dcdcdc center center no-repeat; 
+  background: #232323 center center no-repeat; 
 }
 
 #footer a.twitter {
