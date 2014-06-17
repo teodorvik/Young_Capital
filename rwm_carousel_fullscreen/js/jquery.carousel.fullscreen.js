@@ -23,6 +23,6 @@ jQuery(document).ready(function() {
 	});
 
 	$(window).on('resize', function() {
-		$('.carousel').css({'width': $(window).outerWidth(), 'height': $(window).outerHeight()});
+		$('.carousel').css({'width': $(window).outerWidth(), 'min-height': $(window).outerHeight()});
 	});
 }); 
