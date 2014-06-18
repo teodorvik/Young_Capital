@@ -3,6 +3,7 @@
     height:100%;
 }
 
+/************** NAVBAR *****************/
 .navbar {
     position:fixed;
     top:5px;
@@ -10,8 +11,35 @@
     background:#fff;
     border: 0;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.46);
+    background-color: rgba(255, 255, 255, 0.46);
     border-radius: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #013d67;
+}
+.navbar-nav li a {
+ line-height: 40px;
+ font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #3e88da;
+}
+
+.logo{
+  height: 40px;
+  width: auto;
 }
 
 .carousel-caption {
@@ -43,7 +71,7 @@
 }
 
 .panel{
-    background-color: rgba(255, 255, 255, 0.46);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 0;
 }
 
@@ -78,7 +106,7 @@ p{
     bottom:-100px;
     width:100%;
     padding:20px;
-    background-color: rgba(0, 0, 0, 0.46);
+    background-color: rgba(255, 255, 255, 0.46);
     -webkit-transition: 0.3s all ease-in-out;
     -moz-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
@@ -87,7 +115,7 @@ p{
 
 #footer:hover{
   bottom:0px;
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgba(255, 255, 255, 0.80);
 }
 
 #footer a:hover {
