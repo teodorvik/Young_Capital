@@ -1,0 +1,69 @@
+html,body {
+	height:100%;
+}
+
+body {
+    height:100%;
+  	width:100%;
+    background-size:100% auto;
+	background: url('./img/bg_06_b.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 25px;
+}
+
+@font-face { font-family: Giorgio; src: url('./font/Giorgio.ttf'); } 
+@font-face { font-family: Giorgio-Thin; src: url('./font/Giorgio-Thin.ttf'); } 
+
+h1, h2, h3{
+    font-family: Giorgio;
+}
+
+p{
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.panel{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.logo-wrapper{
+	max-width:100%;    
+    display:block;
+    height:auto;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-image{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width:100% !important;
+	max-height: 130px;
+    height:auto;
+    display:block;
+}
+
+.news-item{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	margin-bottom: 20px;
+}
+
+.news-item<.date{
+	float: right;
+	padding: 5px;
+	color: #232323;
+}
+/*
+.news-image{
+	display:block;
+	height:100%;
+	width:100%;
+	background: url('./img/bg_07_b.jpg') no-repeat center center fixed; 
+}*/

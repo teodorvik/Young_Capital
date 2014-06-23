@@ -3,6 +3,22 @@
     height:100%;
 }
 
+/************** FONTS *****************/
+@font-face { font-family: Giorgio; src: url('./font/Giorgio.ttf'); } 
+@font-face { font-family: Giorgio-Thin; src: url('./font/Giorgio-Thin.ttf'); } 
+
+h1, h2, h3{
+    font-family: Giorgio;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+p{
+  font-family: 'Droid Sans', sans-serif;
+}
+
 /************** NAVBAR *****************/
 .navbar {
     position:fixed;
@@ -19,27 +35,44 @@
     -moz-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 .navbar:hover {
     background-color: rgba(255, 255, 255, 0.80);
 }
 
+.navbar-toggle{
+  margin-top: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border: 0;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #013d67;
-}
-.navbar-nav li a {
- line-height: 40px;
- font-size: 16px;
+  font-family: Giorgio;
+  line-height: 40px;
+  font-size: 17px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #3e88da;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #6F6F6F;
+}
+
 .logo{
   height: 40px;
   width: auto;
+}
+
+.news-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  margin-bottom: 20px;
 }
 
 .carousel-caption {
@@ -73,6 +106,8 @@
 .panel{
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 25px
 }
 
 .text-left{
@@ -88,14 +123,6 @@
   margin-bottom: 120px;
 }
 
-h1, h2, h3{
-    font-family: 'Roboto', sans-serif;
-}
-
-p{
-  font-family: 'Droid Sans', sans-serif;
-}
-
 .carousel {
     height:100%;
 }
@@ -103,7 +130,7 @@ p{
 /***************** FOOTER *****************/
 #footer{
     position:fixed;
-    bottom:-100px;
+    bottom:0px;
     width:100%;
     padding:20px;
     background-color: rgba(255, 255, 255, 0.46);
@@ -118,18 +145,12 @@ p{
   background-color: rgba(255, 255, 255, 0.80);
 }
 
-#footer a:hover {
-  background-color: #ff7d00;
-}
-
-#footer a{
+a.facebook, a.twitter, a.instagram{
   display: block;
   margin-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   float: left;
-  width: 65px;
-  height: 65px;
+  width: 40px;
+  height: 40px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -139,25 +160,66 @@ p{
   -moz-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  background: #232323 center center no-repeat; 
+  background: rgba(0, 39, 66, 0.96) center center no-repeat; 
 }
 
 #footer a.twitter {
-  background-image: url('./img/twitter.png');
+  background-image: url('./img/twitter_small.png');
+}
+
+#footer a.twitter:hover {
+  background-color: #15558d;
 }
 
 #footer a.facebook {
-  background-image: url('./img/facebook.png');
+  background-image: url('./img/facebook_small.png');
+  
+}
+
+#footer a.facebook:hover {
+  background-color: #013d67;
 }
 
 #footer a.instagram {
-  background-image: url('./img/instagram.png');
+  background-image: url('./img/instagram_small.png');
+}
+
+#footer a.instagram:hover {
+  background-color: #276caf;
 }
 
 .fb-like{
-   overflow: hidden !important;
+  overflow: hidden !important;
+  float: right;
+  line-height: 40px;
 }
 
-#name-of-creator{
-    color: #CCC8C8;
+.name-of-creator{
+  color: #ededed;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.name-of-creator:hover{
+  color: #121212;
+
+}
+
+@media (min-width:900px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+@media (max-width: 899px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
 }
