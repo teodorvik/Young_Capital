@@ -6,17 +6,23 @@
 /************** FONTS *****************/
 @font-face { font-family: Giorgio; src: url('./font/Giorgio.ttf'); } 
 @font-face { font-family: Giorgio-Thin; src: url('./font/Giorgio-Thin.ttf'); } 
+@font-face {
+  font-family: '33535gillsansmt';
+  src: url('./font/33535gillsansmt.eot');
+  src: local('./font/33535gillsansmt'), url('./font/33535gillsansmt.woff') format('woff'), url('./33535gillsansmt.ttf') format('truetype');
+}
 
 h1, h2, h3{
-    font-family: Giorgio;
+  font-family: Giorgio;
 }
 
 h1{
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 p{
-  font-family: 'Droid Sans', sans-serif;
+  /*font-family: '33535gillsansmt';*/
+  font-family: 'Lato', sans-serif;
 }
 
 /************** NAVBAR *****************/
